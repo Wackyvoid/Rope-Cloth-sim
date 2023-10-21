@@ -198,6 +198,9 @@ void draw() {
   background(0);
 
   // Lighting:
+  int sc = 10;
+  directionalLight(51*sc, 102*sc, 126*sc, eyeX, eyeY, eyeZ);
+  ambientLight(51*sc, 102*sc, 126*sc, eyeX, eyeY, eyeZ);
 
   // CAMERA:  
   camera(eyeX, eyeY, eyeZ, height/2, width/2, 0, 0, 1, 0);
